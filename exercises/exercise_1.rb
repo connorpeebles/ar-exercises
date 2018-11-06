@@ -26,8 +26,4 @@ gastown = Store.create(
   womens_apparel: false
 )
 
-burnaby.save
-richmond.save
-gastown.save
-
 puts Store.count

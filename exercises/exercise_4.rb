@@ -29,10 +29,6 @@ yaletown = Store.create(
   womens_apparel: true
 )
 
-surrey.save
-whistler.save
-yaletown.save
-
 @mens_stores = Store.where(mens_apparel: true)
 @mens_stores.each { |s| puts s.name }
 
