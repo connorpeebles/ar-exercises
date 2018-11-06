@@ -19,4 +19,7 @@ new_store = Store.create(
   name: store_name
 )
 
-new_store.errors.messages.each { |e| puts "#{e[0]}: #{e[1]}" }
+new_store.errors.messages.each do |e|
+  puts "ERROR: #{e[0]}"
+  e[1].each { |e2| puts " - #{e2}" }
+end
